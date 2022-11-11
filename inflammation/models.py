@@ -42,6 +42,11 @@ def daily_min(data):
     return np.min(data, axis=0)
 
 
+def std_dev(data):
+    """Calculate the std dev of the 2d inflammation data array"""
+    return np.std(data, axis=0)
+
+
 def patient_normalise(data):
     """Normalise patient data from a 2D inflammation data array.
     NaN values are ignored, and normalised to 0.
